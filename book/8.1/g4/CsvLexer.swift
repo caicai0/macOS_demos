@@ -1,13 +1,13 @@
-// Generated from Csv.g4 by ANTLR 4.7.2
+// Generated from CSV.g4 by ANTLR 4.7.2
 import Antlr4
 
-open class CsvLexer: Lexer {
+open class CSVLexer: Lexer {
 
 	internal static var _decisionToDFA: [DFA] = {
           var decisionToDFA = [DFA]()
-          let length = CsvLexer._ATN.getNumberOfDecisions()
+          let length = CSVLexer._ATN.getNumberOfDecisions()
           for i in 0..<length {
-          	    decisionToDFA.append(DFA(CsvLexer._ATN.getDecisionState(i)!, i))
+          	    decisionToDFA.append(DFA(CSVLexer._ATN.getDecisionState(i)!, i))
           }
            return decisionToDFA
      }()
@@ -44,37 +44,37 @@ open class CsvLexer: Lexer {
 
 	override open
 	func getVocabulary() -> Vocabulary {
-		return CsvLexer.VOCABULARY
+		return CSVLexer.VOCABULARY
 	}
 
 	public
 	required init(_ input: CharStream) {
 	    RuntimeMetaData.checkVersion("4.7.2", RuntimeMetaData.VERSION)
 		super.init(input)
-		_interp = LexerATNSimulator(self, CsvLexer._ATN, CsvLexer._decisionToDFA, CsvLexer._sharedContextCache)
+		_interp = LexerATNSimulator(self, CSVLexer._ATN, CSVLexer._decisionToDFA, CSVLexer._sharedContextCache)
 	}
 
 	override open
-	func getGrammarFileName() -> String { return "Csv.g4" }
+	func getGrammarFileName() -> String { return "CSV.g4" }
 
 	override open
-	func getRuleNames() -> [String] { return CsvLexer.ruleNames }
+	func getRuleNames() -> [String] { return CSVLexer.ruleNames }
 
 	override open
-	func getSerializedATN() -> String { return CsvLexer._serializedATN }
+	func getSerializedATN() -> String { return CSVLexer._serializedATN }
 
 	override open
-	func getChannelNames() -> [String] { return CsvLexer.channelNames }
+	func getChannelNames() -> [String] { return CSVLexer.channelNames }
 
 	override open
-	func getModeNames() -> [String] { return CsvLexer.modeNames }
+	func getModeNames() -> [String] { return CSVLexer.modeNames }
 
 	override open
-	func getATN() -> ATN { return CsvLexer._ATN }
+	func getATN() -> ATN { return CSVLexer._ATN }
 
 
 	public
-	static let _serializedATN: String = CsvLexerATN().jsonString
+	static let _serializedATN: String = CSVLexerATN().jsonString
 
 	public
 	static let _ATN: ATN = ATNDeserializer().deserializeFromJson(_serializedATN)

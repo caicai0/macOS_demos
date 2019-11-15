@@ -1,13 +1,13 @@
-// Generated from Csv.g4 by ANTLR 4.7.2
+// Generated from CSV.g4 by ANTLR 4.7.2
 import Antlr4
 
-open class CsvParser: Parser {
+open class CSVParser: Parser {
 
 	internal static var _decisionToDFA: [DFA] = {
           var decisionToDFA = [DFA]()
-          let length = CsvParser._ATN.getNumberOfDecisions()
+          let length = CSVParser._ATN.getNumberOfDecisions()
           for i in 0..<length {
-            decisionToDFA.append(DFA(CsvParser._ATN.getDecisionState(i)!, i))
+            decisionToDFA.append(DFA(CSVParser._ATN.getDecisionState(i)!, i))
            }
            return decisionToDFA
      }()
@@ -20,11 +20,11 @@ open class CsvParser: Parser {
 	}
 
 	public
-	static let RULE_file = 0, RULE_hdr = 1, RULE_row = 2, RULE_field = 3
+	static let RULE_csvFile = 0, RULE_hdr = 1, RULE_row = 2, RULE_field = 3
 
 	public
 	static let ruleNames: [String] = [
-		"file", "hdr", "row", "field"
+		"csvFile", "hdr", "row", "field"
 	]
 
 	private static let _LITERAL_NAMES: [String?] = [
@@ -37,32 +37,32 @@ open class CsvParser: Parser {
 	static let VOCABULARY = Vocabulary(_LITERAL_NAMES, _SYMBOLIC_NAMES)
 
 	override open
-	func getGrammarFileName() -> String { return "Csv.g4" }
+	func getGrammarFileName() -> String { return "CSV.g4" }
 
 	override open
-	func getRuleNames() -> [String] { return CsvParser.ruleNames }
+	func getRuleNames() -> [String] { return CSVParser.ruleNames }
 
 	override open
-	func getSerializedATN() -> String { return CsvParser._serializedATN }
+	func getSerializedATN() -> String { return CSVParser._serializedATN }
 
 	override open
-	func getATN() -> ATN { return CsvParser._ATN }
+	func getATN() -> ATN { return CSVParser._ATN }
 
 
 	override open
 	func getVocabulary() -> Vocabulary {
-	    return CsvParser.VOCABULARY
+	    return CSVParser.VOCABULARY
 	}
 
 	override public
 	init(_ input:TokenStream) throws {
 	    RuntimeMetaData.checkVersion("4.7.2", RuntimeMetaData.VERSION)
 		try super.init(input)
-		_interp = ParserATNSimulator(self,CsvParser._ATN,CsvParser._decisionToDFA, CsvParser._sharedContextCache)
+		_interp = ParserATNSimulator(self,CSVParser._ATN,CSVParser._decisionToDFA, CSVParser._sharedContextCache)
 	}
 
 
-	public class FileContext: ParserRuleContext {
+	public class CsvFileContext: ParserRuleContext {
 			open
 			func hdr() -> HdrContext? {
 				return getRuleContext(HdrContext.self, 0)
@@ -77,27 +77,27 @@ open class CsvParser: Parser {
 			}
 		override open
 		func getRuleIndex() -> Int {
-			return CsvParser.RULE_file
+			return CSVParser.RULE_csvFile
 		}
 		override open
 		func enterRule(_ listener: ParseTreeListener) {
-			if let listener = listener as? CsvListener {
-				listener.enterFile(self)
+			if let listener = listener as? CSVListener {
+				listener.enterCsvFile(self)
 			}
 		}
 		override open
 		func exitRule(_ listener: ParseTreeListener) {
-			if let listener = listener as? CsvListener {
-				listener.exitFile(self)
+			if let listener = listener as? CSVListener {
+				listener.exitCsvFile(self)
 			}
 		}
 		override open
 		func accept<T>(_ visitor: ParseTreeVisitor<T>) -> T? {
-			if let visitor = visitor as? CsvVisitor {
-			    return visitor.visitFile(self)
+			if let visitor = visitor as? CSVVisitor {
+			    return visitor.visitCsvFile(self)
 			}
-			else if let visitor = visitor as? CsvBaseVisitor {
-			    return visitor.visitFile(self)
+			else if let visitor = visitor as? CSVBaseVisitor {
+			    return visitor.visitCsvFile(self)
 			}
 			else {
 			     return visitor.visitChildren(self)
@@ -105,9 +105,9 @@ open class CsvParser: Parser {
 		}
 	}
 	@discardableResult
-	 open func file() throws -> FileContext {
-		var _localctx: FileContext = FileContext(_ctx, getState())
-		try enterRule(_localctx, 0, CsvParser.RULE_file)
+	 open func csvFile() throws -> CsvFileContext {
+		var _localctx: CsvFileContext = CsvFileContext(_ctx, getState())
+		try enterRule(_localctx, 0, CSVParser.RULE_csvFile)
 		var _la: Int = 0
 		defer {
 	    		try! exitRule()
@@ -130,7 +130,7 @@ open class CsvParser: Parser {
 		 	} while (//closure
 		 	 { () -> Bool in
 		 	      let testSet: Bool = {  () -> Bool in
-		 	   let testArray: [Int] = [_la, CsvParser.Tokens.T__0.rawValue,CsvParser.Tokens.T__1.rawValue,CsvParser.Tokens.T__2.rawValue,CsvParser.Tokens.TEXT.rawValue,CsvParser.Tokens.STRING.rawValue]
+		 	   let testArray: [Int] = [_la, CSVParser.Tokens.T__0.rawValue,CSVParser.Tokens.T__1.rawValue,CSVParser.Tokens.T__2.rawValue,CSVParser.Tokens.TEXT.rawValue,CSVParser.Tokens.STRING.rawValue]
 		 	    return  Utils.testBitLeftShiftArray(testArray, 0)
 		 	}()
 		 	      return testSet
@@ -153,26 +153,26 @@ open class CsvParser: Parser {
 			}
 		override open
 		func getRuleIndex() -> Int {
-			return CsvParser.RULE_hdr
+			return CSVParser.RULE_hdr
 		}
 		override open
 		func enterRule(_ listener: ParseTreeListener) {
-			if let listener = listener as? CsvListener {
+			if let listener = listener as? CSVListener {
 				listener.enterHdr(self)
 			}
 		}
 		override open
 		func exitRule(_ listener: ParseTreeListener) {
-			if let listener = listener as? CsvListener {
+			if let listener = listener as? CSVListener {
 				listener.exitHdr(self)
 			}
 		}
 		override open
 		func accept<T>(_ visitor: ParseTreeVisitor<T>) -> T? {
-			if let visitor = visitor as? CsvVisitor {
+			if let visitor = visitor as? CSVVisitor {
 			    return visitor.visitHdr(self)
 			}
-			else if let visitor = visitor as? CsvBaseVisitor {
+			else if let visitor = visitor as? CSVBaseVisitor {
 			    return visitor.visitHdr(self)
 			}
 			else {
@@ -183,7 +183,7 @@ open class CsvParser: Parser {
 	@discardableResult
 	 open func hdr() throws -> HdrContext {
 		var _localctx: HdrContext = HdrContext(_ctx, getState())
-		try enterRule(_localctx, 2, CsvParser.RULE_hdr)
+		try enterRule(_localctx, 2, CSVParser.RULE_hdr)
 		defer {
 	    		try! exitRule()
 	    }
@@ -213,26 +213,26 @@ open class CsvParser: Parser {
 			}
 		override open
 		func getRuleIndex() -> Int {
-			return CsvParser.RULE_row
+			return CSVParser.RULE_row
 		}
 		override open
 		func enterRule(_ listener: ParseTreeListener) {
-			if let listener = listener as? CsvListener {
+			if let listener = listener as? CSVListener {
 				listener.enterRow(self)
 			}
 		}
 		override open
 		func exitRule(_ listener: ParseTreeListener) {
-			if let listener = listener as? CsvListener {
+			if let listener = listener as? CSVListener {
 				listener.exitRow(self)
 			}
 		}
 		override open
 		func accept<T>(_ visitor: ParseTreeVisitor<T>) -> T? {
-			if let visitor = visitor as? CsvVisitor {
+			if let visitor = visitor as? CSVVisitor {
 			    return visitor.visitRow(self)
 			}
-			else if let visitor = visitor as? CsvBaseVisitor {
+			else if let visitor = visitor as? CSVBaseVisitor {
 			    return visitor.visitRow(self)
 			}
 			else {
@@ -243,7 +243,7 @@ open class CsvParser: Parser {
 	@discardableResult
 	 open func row() throws -> RowContext {
 		var _localctx: RowContext = RowContext(_ctx, getState())
-		try enterRule(_localctx, 4, CsvParser.RULE_row)
+		try enterRule(_localctx, 4, CSVParser.RULE_row)
 		var _la: Int = 0
 		defer {
 	    		try! exitRule()
@@ -257,11 +257,11 @@ open class CsvParser: Parser {
 		 	_la = try _input.LA(1)
 		 	while (//closure
 		 	 { () -> Bool in
-		 	      let testSet: Bool = _la == CsvParser.Tokens.T__0.rawValue
+		 	      let testSet: Bool = _la == CSVParser.Tokens.T__0.rawValue
 		 	      return testSet
 		 	 }()) {
 		 		setState(17)
-		 		try match(CsvParser.Tokens.T__0.rawValue)
+		 		try match(CSVParser.Tokens.T__0.rawValue)
 		 		setState(18)
 		 		try field()
 
@@ -275,16 +275,16 @@ open class CsvParser: Parser {
 		 	_la = try _input.LA(1)
 		 	if (//closure
 		 	 { () -> Bool in
-		 	      let testSet: Bool = _la == CsvParser.Tokens.T__1.rawValue
+		 	      let testSet: Bool = _la == CSVParser.Tokens.T__1.rawValue
 		 	      return testSet
 		 	 }()) {
 		 		setState(24)
-		 		try match(CsvParser.Tokens.T__1.rawValue)
+		 		try match(CSVParser.Tokens.T__1.rawValue)
 
 		 	}
 
 		 	setState(27)
-		 	try match(CsvParser.Tokens.T__2.rawValue)
+		 	try match(CSVParser.Tokens.T__2.rawValue)
 
 		}
 		catch ANTLRException.recognition(let re) {
@@ -299,7 +299,7 @@ open class CsvParser: Parser {
 	public class FieldContext: ParserRuleContext {
 		override open
 		func getRuleIndex() -> Int {
-			return CsvParser.RULE_field
+			return CSVParser.RULE_field
 		}
 	 
 		open
@@ -310,7 +310,7 @@ open class CsvParser: Parser {
 	public class StringContext: FieldContext {
 			open
 			func STRING() -> TerminalNode? {
-				return getToken(CsvParser.Tokens.STRING.rawValue, 0)
+				return getToken(CSVParser.Tokens.STRING.rawValue, 0)
 			}
 
 		public
@@ -320,22 +320,22 @@ open class CsvParser: Parser {
 		}
 		override open
 		func enterRule(_ listener: ParseTreeListener) {
-			if let listener = listener as? CsvListener {
+			if let listener = listener as? CSVListener {
 				listener.enterString(self)
 			}
 		}
 		override open
 		func exitRule(_ listener: ParseTreeListener) {
-			if let listener = listener as? CsvListener {
+			if let listener = listener as? CSVListener {
 				listener.exitString(self)
 			}
 		}
 		override open
 		func accept<T>(_ visitor: ParseTreeVisitor<T>) -> T? {
-			if let visitor = visitor as? CsvVisitor {
+			if let visitor = visitor as? CSVVisitor {
 			    return visitor.visitString(self)
 			}
-			else if let visitor = visitor as? CsvBaseVisitor {
+			else if let visitor = visitor as? CSVBaseVisitor {
 			    return visitor.visitString(self)
 			}
 			else {
@@ -346,7 +346,7 @@ open class CsvParser: Parser {
 	public class TextContext: FieldContext {
 			open
 			func TEXT() -> TerminalNode? {
-				return getToken(CsvParser.Tokens.TEXT.rawValue, 0)
+				return getToken(CSVParser.Tokens.TEXT.rawValue, 0)
 			}
 
 		public
@@ -356,22 +356,22 @@ open class CsvParser: Parser {
 		}
 		override open
 		func enterRule(_ listener: ParseTreeListener) {
-			if let listener = listener as? CsvListener {
+			if let listener = listener as? CSVListener {
 				listener.enterText(self)
 			}
 		}
 		override open
 		func exitRule(_ listener: ParseTreeListener) {
-			if let listener = listener as? CsvListener {
+			if let listener = listener as? CSVListener {
 				listener.exitText(self)
 			}
 		}
 		override open
 		func accept<T>(_ visitor: ParseTreeVisitor<T>) -> T? {
-			if let visitor = visitor as? CsvVisitor {
+			if let visitor = visitor as? CSVVisitor {
 			    return visitor.visitText(self)
 			}
-			else if let visitor = visitor as? CsvBaseVisitor {
+			else if let visitor = visitor as? CSVBaseVisitor {
 			    return visitor.visitText(self)
 			}
 			else {
@@ -388,22 +388,22 @@ open class CsvParser: Parser {
 		}
 		override open
 		func enterRule(_ listener: ParseTreeListener) {
-			if let listener = listener as? CsvListener {
+			if let listener = listener as? CSVListener {
 				listener.enterEmpty(self)
 			}
 		}
 		override open
 		func exitRule(_ listener: ParseTreeListener) {
-			if let listener = listener as? CsvListener {
+			if let listener = listener as? CSVListener {
 				listener.exitEmpty(self)
 			}
 		}
 		override open
 		func accept<T>(_ visitor: ParseTreeVisitor<T>) -> T? {
-			if let visitor = visitor as? CsvVisitor {
+			if let visitor = visitor as? CSVVisitor {
 			    return visitor.visitEmpty(self)
 			}
-			else if let visitor = visitor as? CsvBaseVisitor {
+			else if let visitor = visitor as? CSVBaseVisitor {
 			    return visitor.visitEmpty(self)
 			}
 			else {
@@ -414,19 +414,19 @@ open class CsvParser: Parser {
 	@discardableResult
 	 open func field() throws -> FieldContext {
 		var _localctx: FieldContext = FieldContext(_ctx, getState())
-		try enterRule(_localctx, 6, CsvParser.RULE_field)
+		try enterRule(_localctx, 6, CSVParser.RULE_field)
 		defer {
 	    		try! exitRule()
 	    }
 		do {
 		 	setState(32)
 		 	try _errHandler.sync(self)
-		 	switch (CsvParser.Tokens(rawValue: try _input.LA(1))!) {
+		 	switch (CSVParser.Tokens(rawValue: try _input.LA(1))!) {
 		 	case .TEXT:
 		 		_localctx =  TextContext(_localctx);
 		 		try enterOuterAlt(_localctx, 1)
 		 		setState(29)
-		 		try match(CsvParser.Tokens.TEXT.rawValue)
+		 		try match(CSVParser.Tokens.TEXT.rawValue)
 
 		 		break
 
@@ -434,7 +434,7 @@ open class CsvParser: Parser {
 		 		_localctx =  StringContext(_localctx);
 		 		try enterOuterAlt(_localctx, 2)
 		 		setState(30)
-		 		try match(CsvParser.Tokens.STRING.rawValue)
+		 		try match(CSVParser.Tokens.STRING.rawValue)
 
 		 		break
 		 	case .T__0:fallthrough
@@ -459,7 +459,7 @@ open class CsvParser: Parser {
 
 
 	public
-	static let _serializedATN = CsvParserATN().jsonString
+	static let _serializedATN = CSVParserATN().jsonString
 
 	public
 	static let _ATN = ATNDeserializer().deserializeFromJson(_serializedATN)

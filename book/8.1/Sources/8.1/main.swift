@@ -1,12 +1,12 @@
 import Foundation
 import Antlr4
 
-class Loader: CsvBaseListener {
+class Loader: CSVBaseListener {
     var rows = [[[String:String]]]()
     var header = [String]()
     var currentRow = [String]()
     
-    override func exitString(_ ctx: CsvParser.StringContext) {
+    override func exitString(_ ctx: CSVParser.StringContext) {
         if let s = ctx.STRING()?.getText() {
             currentRow.append(s)
         }else{
@@ -14,7 +14,7 @@ class Loader: CsvBaseListener {
         }
     }
     
-    override func exitText(_ ctx: CsvParser.TextContext) {
+    override func exitText(_ ctx: CSVParser.TextContext) {
         if let s = ctx.TEXT()?.getText() {
             currentRow.append(s)
         }else{
@@ -22,21 +22,21 @@ class Loader: CsvBaseListener {
         }
     }
     
-    override func exitEmpty(_ ctx: CsvParser.EmptyContext) {
+    override func exitEmpty(_ ctx: CSVParser.EmptyContext) {
         currentRow.append("")
     }
     
-    override func exitHdr(_ ctx: CsvParser.HdrContext) {
+    override func exitHdr(_ ctx: CSVParser.HdrContext) {
         header = [String]()
         header.append(contentsOf: currentRow)
     }
     
-    override func enterRow(_ ctx: CsvParser.RowContext) {
+    override func enterRow(_ ctx: CSVParser.RowContext) {
         currentRow = [String]()
     }
     
-    override func exitRow(_ ctx: CsvParser.RowContext) {
-        if ctx.parent?.getRuleIndex() == CsvParser.RULE_hdr {
+    override func exitRow(_ ctx: CSVParser.RowContext) {
+        if ctx.parent?.getRuleIndex() == CSVParser.RULE_hdr {
             return;
         }
         var m = [[String:String]]()
@@ -50,10 +50,10 @@ class Loader: CsvBaseListener {
 if let fileContent = FileManager.default.contents(atPath: "/Users/liyufeng/git/caihub/macOS_demos/book/8.1/text.csv") {
     if let str = String(data: fileContent, encoding: .utf8) {
         let input = ANTLRInputStream(str)
-        let lexer = CsvLexer(input)
+        let lexer = CSVLexer(input)
         let tokens = CommonTokenStream(lexer)
-        let parser = try CsvParser(tokens)
-        let tree = try parser.file()
+        let parser = try CSVParser(tokens)
+        let tree = try parser.csvFile()
 
         let walker = ParseTreeWalker()
         let loader = Loader()

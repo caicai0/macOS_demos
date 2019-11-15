@@ -15,7 +15,7 @@ TEXT
 STRING
 
 rule names:
-file
+csvFile
 hdr
 row
 field
