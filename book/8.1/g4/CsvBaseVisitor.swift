@@ -37,6 +37,13 @@ open class CSVBaseVisitor<T>: AbstractParseTreeVisitor<T> {
 	 * <p>The default implementation returns the result of calling
 	 * {@link #visitChildren} on {@code ctx}.</p>
 	 */
+	open func visitField(_ ctx: CSVParser.FieldContext) -> T? { return visitChildren(ctx) }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation returns the result of calling
+	 * {@link #visitChildren} on {@code ctx}.</p>
+	 */
 	open func visitText(_ ctx: CSVParser.TextContext) -> T? { return visitChildren(ctx) }
 	/**
 	 * {@inheritDoc}

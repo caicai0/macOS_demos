@@ -47,7 +47,7 @@ class Loader: CSVBaseListener {
     }
 }
 
-if let fileContent = FileManager.default.contents(atPath: "/Users/liyufeng/git/caihub/macOS_demos/book/8.1/text.csv") {
+if let fileContent = FileManager.default.contents(atPath: "/Users/liyufeng/git/caihub/macOS_demos/book/8.1/g4/examples/example1.csv") {
     if let str = String(data: fileContent, encoding: .utf8) {
         let input = ANTLRInputStream(str)
         let lexer = CSVLexer(input)

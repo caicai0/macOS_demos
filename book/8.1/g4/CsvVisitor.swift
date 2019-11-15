@@ -40,8 +40,17 @@ open class CSVVisitor<T>: ParseTreeVisitor<T> {
 	}
 
 	/**
-	 * Visit a parse tree produced by the {@code text}
-	 * labeled alternative in {@link CSVParser#field}.
+	 * Visit a parse tree produced by {@link CSVParser#field}.
+	- Parameters:
+	  - ctx: the parse tree
+	- returns: the visitor result
+	 */
+	open func visitField(_ ctx: CSVParser.FieldContext) -> T {
+	 	fatalError(#function + " must be overridden")
+	}
+
+	/**
+	 * Visit a parse tree produced by {@link CSVParser#text}.
 	- Parameters:
 	  - ctx: the parse tree
 	- returns: the visitor result
@@ -51,8 +60,7 @@ open class CSVVisitor<T>: ParseTreeVisitor<T> {
 	}
 
 	/**
-	 * Visit a parse tree produced by the {@code string}
-	 * labeled alternative in {@link CSVParser#field}.
+	 * Visit a parse tree produced by {@link CSVParser#string}.
 	- Parameters:
 	  - ctx: the parse tree
 	- returns: the visitor result
@@ -62,8 +70,7 @@ open class CSVVisitor<T>: ParseTreeVisitor<T> {
 	}
 
 	/**
-	 * Visit a parse tree produced by the {@code empty}
-	 * labeled alternative in {@link CSVParser#field}.
+	 * Visit a parse tree produced by {@link CSVParser#empty}.
 	- Parameters:
 	  - ctx: the parse tree
 	- returns: the visitor result

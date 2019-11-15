@@ -43,43 +43,49 @@ public protocol CSVListener: ParseTreeListener {
 	 */
 	func exitRow(_ ctx: CSVParser.RowContext)
 	/**
-	 * Enter a parse tree produced by the {@code text}
-	 * labeled alternative in {@link CSVParser#field}.
+	 * Enter a parse tree produced by {@link CSVParser#field}.
+	 - Parameters:
+	   - ctx: the parse tree
+	 */
+	func enterField(_ ctx: CSVParser.FieldContext)
+	/**
+	 * Exit a parse tree produced by {@link CSVParser#field}.
+	 - Parameters:
+	   - ctx: the parse tree
+	 */
+	func exitField(_ ctx: CSVParser.FieldContext)
+	/**
+	 * Enter a parse tree produced by {@link CSVParser#text}.
 	 - Parameters:
 	   - ctx: the parse tree
 	 */
 	func enterText(_ ctx: CSVParser.TextContext)
 	/**
-	 * Exit a parse tree produced by the {@code text}
-	 * labeled alternative in {@link CSVParser#field}.
+	 * Exit a parse tree produced by {@link CSVParser#text}.
 	 - Parameters:
 	   - ctx: the parse tree
 	 */
 	func exitText(_ ctx: CSVParser.TextContext)
 	/**
-	 * Enter a parse tree produced by the {@code string}
-	 * labeled alternative in {@link CSVParser#field}.
+	 * Enter a parse tree produced by {@link CSVParser#string}.
 	 - Parameters:
 	   - ctx: the parse tree
 	 */
 	func enterString(_ ctx: CSVParser.StringContext)
 	/**
-	 * Exit a parse tree produced by the {@code string}
-	 * labeled alternative in {@link CSVParser#field}.
+	 * Exit a parse tree produced by {@link CSVParser#string}.
 	 - Parameters:
 	   - ctx: the parse tree
 	 */
 	func exitString(_ ctx: CSVParser.StringContext)
 	/**
-	 * Enter a parse tree produced by the {@code empty}
-	 * labeled alternative in {@link CSVParser#field}.
+	 * Enter a parse tree produced by {@link CSVParser#empty}.
 	 - Parameters:
 	   - ctx: the parse tree
 	 */
 	func enterEmpty(_ ctx: CSVParser.EmptyContext)
 	/**
-	 * Exit a parse tree produced by the {@code empty}
-	 * labeled alternative in {@link CSVParser#field}.
+	 * Exit a parse tree produced by {@link CSVParser#empty}.
 	 - Parameters:
 	   - ctx: the parse tree
 	 */

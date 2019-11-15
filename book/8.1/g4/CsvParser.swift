@@ -20,11 +20,12 @@ open class CSVParser: Parser {
 	}
 
 	public
-	static let RULE_csvFile = 0, RULE_hdr = 1, RULE_row = 2, RULE_field = 3
+	static let RULE_csvFile = 0, RULE_hdr = 1, RULE_row = 2, RULE_field = 3, 
+            RULE_text = 4, RULE_string = 5, RULE_empty = 6
 
 	public
 	static let ruleNames: [String] = [
-		"csvFile", "hdr", "row", "field"
+		"csvFile", "hdr", "row", "field", "text", "string", "empty"
 	]
 
 	private static let _LITERAL_NAMES: [String?] = [
@@ -114,17 +115,17 @@ open class CSVParser: Parser {
 	    }
 		do {
 		 	try enterOuterAlt(_localctx, 1)
-		 	setState(8)
+		 	setState(14)
 		 	try hdr()
-		 	setState(10) 
+		 	setState(16) 
 		 	try _errHandler.sync(self)
 		 	_la = try _input.LA(1)
 		 	repeat {
-		 		setState(9)
+		 		setState(15)
 		 		try row()
 
 
-		 		setState(12); 
+		 		setState(18); 
 		 		try _errHandler.sync(self)
 		 		_la = try _input.LA(1)
 		 	} while (//closure
@@ -189,7 +190,7 @@ open class CSVParser: Parser {
 	    }
 		do {
 		 	try enterOuterAlt(_localctx, 1)
-		 	setState(14)
+		 	setState(20)
 		 	try row()
 
 		}
@@ -250,9 +251,9 @@ open class CSVParser: Parser {
 	    }
 		do {
 		 	try enterOuterAlt(_localctx, 1)
-		 	setState(16)
+		 	setState(22)
 		 	try field()
-		 	setState(21)
+		 	setState(27)
 		 	try _errHandler.sync(self)
 		 	_la = try _input.LA(1)
 		 	while (//closure
@@ -260,17 +261,17 @@ open class CSVParser: Parser {
 		 	      let testSet: Bool = _la == CSVParser.Tokens.T__0.rawValue
 		 	      return testSet
 		 	 }()) {
-		 		setState(17)
+		 		setState(23)
 		 		try match(CSVParser.Tokens.T__0.rawValue)
-		 		setState(18)
+		 		setState(24)
 		 		try field()
 
 
-		 		setState(23)
+		 		setState(29)
 		 		try _errHandler.sync(self)
 		 		_la = try _input.LA(1)
 		 	}
-		 	setState(25)
+		 	setState(31)
 		 	try _errHandler.sync(self)
 		 	_la = try _input.LA(1)
 		 	if (//closure
@@ -278,12 +279,12 @@ open class CSVParser: Parser {
 		 	      let testSet: Bool = _la == CSVParser.Tokens.T__1.rawValue
 		 	      return testSet
 		 	 }()) {
-		 		setState(24)
+		 		setState(30)
 		 		try match(CSVParser.Tokens.T__1.rawValue)
 
 		 	}
 
-		 	setState(27)
+		 	setState(33)
 		 	try match(CSVParser.Tokens.T__2.rawValue)
 
 		}
@@ -297,62 +298,100 @@ open class CSVParser: Parser {
 	}
 
 	public class FieldContext: ParserRuleContext {
+			open
+			func text() -> TextContext? {
+				return getRuleContext(TextContext.self, 0)
+			}
+			open
+			func string() -> StringContext? {
+				return getRuleContext(StringContext.self, 0)
+			}
+			open
+			func empty() -> EmptyContext? {
+				return getRuleContext(EmptyContext.self, 0)
+			}
 		override open
 		func getRuleIndex() -> Int {
 			return CSVParser.RULE_field
 		}
-	 
-		open
-		func copyFrom(_ ctx: FieldContext) {
-			super.copyFrom(ctx)
-		}
-	}
-	public class StringContext: FieldContext {
-			open
-			func STRING() -> TerminalNode? {
-				return getToken(CSVParser.Tokens.STRING.rawValue, 0)
-			}
-
-		public
-		init(_ ctx: FieldContext) {
-			super.init()
-			copyFrom(ctx)
-		}
 		override open
 		func enterRule(_ listener: ParseTreeListener) {
 			if let listener = listener as? CSVListener {
-				listener.enterString(self)
+				listener.enterField(self)
 			}
 		}
 		override open
 		func exitRule(_ listener: ParseTreeListener) {
 			if let listener = listener as? CSVListener {
-				listener.exitString(self)
+				listener.exitField(self)
 			}
 		}
 		override open
 		func accept<T>(_ visitor: ParseTreeVisitor<T>) -> T? {
 			if let visitor = visitor as? CSVVisitor {
-			    return visitor.visitString(self)
+			    return visitor.visitField(self)
 			}
 			else if let visitor = visitor as? CSVBaseVisitor {
-			    return visitor.visitString(self)
+			    return visitor.visitField(self)
 			}
 			else {
 			     return visitor.visitChildren(self)
 			}
 		}
 	}
-	public class TextContext: FieldContext {
+	@discardableResult
+	 open func field() throws -> FieldContext {
+		var _localctx: FieldContext = FieldContext(_ctx, getState())
+		try enterRule(_localctx, 6, CSVParser.RULE_field)
+		defer {
+	    		try! exitRule()
+	    }
+		do {
+		 	setState(38)
+		 	try _errHandler.sync(self)
+		 	switch (CSVParser.Tokens(rawValue: try _input.LA(1))!) {
+		 	case .TEXT:
+		 		try enterOuterAlt(_localctx, 1)
+		 		setState(35)
+		 		try text()
+
+		 		break
+
+		 	case .STRING:
+		 		try enterOuterAlt(_localctx, 2)
+		 		setState(36)
+		 		try string()
+
+		 		break
+		 	case .T__0:fallthrough
+		 	case .T__1:fallthrough
+		 	case .T__2:
+		 		try enterOuterAlt(_localctx, 3)
+		 		setState(37)
+		 		try empty()
+
+		 		break
+		 	default:
+		 		throw ANTLRException.recognition(e: NoViableAltException(self))
+		 	}
+		}
+		catch ANTLRException.recognition(let re) {
+			_localctx.exception = re
+			_errHandler.reportError(self, re)
+			try _errHandler.recover(self, re)
+		}
+
+		return _localctx
+	}
+
+	public class TextContext: ParserRuleContext {
 			open
 			func TEXT() -> TerminalNode? {
 				return getToken(CSVParser.Tokens.TEXT.rawValue, 0)
 			}
-
-		public
-		init(_ ctx: FieldContext) {
-			super.init()
-			copyFrom(ctx)
+		override open
+		func getRuleIndex() -> Int {
+			return CSVParser.RULE_text
 		}
 		override open
 		func enterRule(_ listener: ParseTreeListener) {
@@ -379,12 +418,88 @@ open class CSVParser: Parser {
 			}
 		}
 	}
-	public class EmptyContext: FieldContext {
+	@discardableResult
+	 open func text() throws -> TextContext {
+		var _localctx: TextContext = TextContext(_ctx, getState())
+		try enterRule(_localctx, 8, CSVParser.RULE_text)
+		defer {
+	    		try! exitRule()
+	    }
+		do {
+		 	try enterOuterAlt(_localctx, 1)
+		 	setState(40)
+		 	try match(CSVParser.Tokens.TEXT.rawValue)
 
-		public
-		init(_ ctx: FieldContext) {
-			super.init()
-			copyFrom(ctx)
+		}
+		catch ANTLRException.recognition(let re) {
+			_localctx.exception = re
+			_errHandler.reportError(self, re)
+			try _errHandler.recover(self, re)
+		}
+
+		return _localctx
+	}
+
+	public class StringContext: ParserRuleContext {
+			open
+			func STRING() -> TerminalNode? {
+				return getToken(CSVParser.Tokens.STRING.rawValue, 0)
+			}
+		override open
+		func getRuleIndex() -> Int {
+			return CSVParser.RULE_string
+		}
+		override open
+		func enterRule(_ listener: ParseTreeListener) {
+			if let listener = listener as? CSVListener {
+				listener.enterString(self)
+			}
+		}
+		override open
+		func exitRule(_ listener: ParseTreeListener) {
+			if let listener = listener as? CSVListener {
+				listener.exitString(self)
+			}
+		}
+		override open
+		func accept<T>(_ visitor: ParseTreeVisitor<T>) -> T? {
+			if let visitor = visitor as? CSVVisitor {
+			    return visitor.visitString(self)
+			}
+			else if let visitor = visitor as? CSVBaseVisitor {
+			    return visitor.visitString(self)
+			}
+			else {
+			     return visitor.visitChildren(self)
+			}
+		}
+	}
+	@discardableResult
+	 open func string() throws -> StringContext {
+		var _localctx: StringContext = StringContext(_ctx, getState())
+		try enterRule(_localctx, 10, CSVParser.RULE_string)
+		defer {
+	    		try! exitRule()
+	    }
+		do {
+		 	try enterOuterAlt(_localctx, 1)
+		 	setState(42)
+		 	try match(CSVParser.Tokens.STRING.rawValue)
+
+		}
+		catch ANTLRException.recognition(let re) {
+			_localctx.exception = re
+			_errHandler.reportError(self, re)
+			try _errHandler.recover(self, re)
+		}
+
+		return _localctx
+	}
+
+	public class EmptyContext: ParserRuleContext {
+		override open
+		func getRuleIndex() -> Int {
+			return CSVParser.RULE_empty
 		}
 		override open
 		func enterRule(_ listener: ParseTreeListener) {
@@ -412,41 +527,15 @@ open class CSVParser: Parser {
 		}
 	}
 	@discardableResult
-	 open func field() throws -> FieldContext {
-		var _localctx: FieldContext = FieldContext(_ctx, getState())
-		try enterRule(_localctx, 6, CSVParser.RULE_field)
+	 open func empty() throws -> EmptyContext {
+		var _localctx: EmptyContext = EmptyContext(_ctx, getState())
+		try enterRule(_localctx, 12, CSVParser.RULE_empty)
 		defer {
 	    		try! exitRule()
 	    }
 		do {
-		 	setState(32)
-		 	try _errHandler.sync(self)
-		 	switch (CSVParser.Tokens(rawValue: try _input.LA(1))!) {
-		 	case .TEXT:
-		 		_localctx =  TextContext(_localctx);
-		 		try enterOuterAlt(_localctx, 1)
-		 		setState(29)
-		 		try match(CSVParser.Tokens.TEXT.rawValue)
+		 	try enterOuterAlt(_localctx, 1)
 
-		 		break
-
-		 	case .STRING:
-		 		_localctx =  StringContext(_localctx);
-		 		try enterOuterAlt(_localctx, 2)
-		 		setState(30)
-		 		try match(CSVParser.Tokens.STRING.rawValue)
-
-		 		break
-		 	case .T__0:fallthrough
-		 	case .T__1:fallthrough
-		 	case .T__2:
-		 		_localctx =  EmptyContext(_localctx);
-		 		try enterOuterAlt(_localctx, 3)
-
-		 		break
-		 	default:
-		 		throw ANTLRException.recognition(e: NoViableAltException(self))
-		 	}
 		}
 		catch ANTLRException.recognition(let re) {
 			_localctx.exception = re

@@ -34,10 +34,14 @@ hdr : row ;
 row : field (',' field)* '\r'? '\n' ;
 
 field
-    : TEXT     	#text
-    | STRING	#string
-    |			#empty
+    : text
+    | string
+    | empty
     ;
+
+text : TEXT ;
+string : STRING ;
+empty : ;
 
 TEXT   : ~[,\n\r"]+ ;
 STRING : '"' ('""'|~'"')* '"' ; // quote-quote is an escaped quote

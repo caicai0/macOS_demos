@@ -54,6 +54,19 @@ open class CSVBaseListener: CSVListener {
 	 *
 	 * <p>The default implementation does nothing.</p>
 	 */
+	open func enterField(_ ctx: CSVParser.FieldContext) { }
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
+	open func exitField(_ ctx: CSVParser.FieldContext) { }
+
+	/**
+	 * {@inheritDoc}
+	 *
+	 * <p>The default implementation does nothing.</p>
+	 */
 	open func enterText(_ ctx: CSVParser.TextContext) { }
 	/**
 	 * {@inheritDoc}
