@@ -6,24 +6,9 @@ class Loader: CSVBaseListener {
     var header = [String]()
     var currentRow = [String]()
     
-    override func exitString(_ ctx: CSVParser.StringContext) {
-        if let s = ctx.STRING()?.getText() {
-            currentRow.append(s)
-        }else{
-            currentRow.append("")
-        }
-    }
-    
-    override func exitText(_ ctx: CSVParser.TextContext) {
-        if let s = ctx.TEXT()?.getText() {
-            currentRow.append(s)
-        }else{
-            currentRow.append("")
-        }
-    }
-    
-    override func exitEmpty(_ ctx: CSVParser.EmptyContext) {
-        currentRow.append("")
+    override func exitField(_ ctx: CSVParser.FieldContext) {
+        let s = ctx.getText()
+        currentRow.append(s)
     }
     
     override func exitHdr(_ ctx: CSVParser.HdrContext) {
