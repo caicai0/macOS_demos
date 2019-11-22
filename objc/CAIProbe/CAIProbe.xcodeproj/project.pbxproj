@@ -31,6 +31,45 @@
 		4B75E4032387CEA4004ED3E4 /* Aspects.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B75E3D72387CDCB004ED3E4 /* Aspects.framework */; };
 		4B75E4062387CF96004ED3E4 /* CAIProbeUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B75E4042387CF96004ED3E4 /* CAIProbeUtils.m */; };
 		4B75E4072387CF96004ED3E4 /* CAIProbeUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B75E4052387CF96004ED3E4 /* CAIProbeUtils.h */; };
+		4B75E4232387D2A1004ED3E4 /* CAIProbe_tvOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B75E41A2387D2A1004ED3E4 /* CAIProbe_tvOS.framework */; };
+		4B75E4282387D2A1004ED3E4 /* CAIProbe_tvOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B75E4272387D2A1004ED3E4 /* CAIProbe_tvOSTests.m */; };
+		4B75E42A2387D2A1004ED3E4 /* CAIProbe_tvOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B75E41C2387D2A1004ED3E4 /* CAIProbe_tvOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B75E43F2387D2BC004ED3E4 /* CAIProbe_macOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B75E4362387D2BC004ED3E4 /* CAIProbe_macOS.framework */; };
+		4B75E4442387D2BC004ED3E4 /* CAIProbe_macOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B75E4432387D2BC004ED3E4 /* CAIProbe_macOSTests.m */; };
+		4B75E4462387D2BC004ED3E4 /* CAIProbe_macOS.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B75E4382387D2BC004ED3E4 /* CAIProbe_macOS.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B75E44D2387D3A1004ED3E4 /* CAIProbe.h in Sources */ = {isa = PBXBuildFile; fileRef = 4B75E3E92387CE4E004ED3E4 /* CAIProbe.h */; };
+		4B75E44E2387D3A1004ED3E4 /* CAIPKeyPathParser.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B75E3DC2387CE4E004ED3E4 /* CAIPKeyPathParser.m */; };
+		4B75E44F2387D3A1004ED3E4 /* CAIPModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B75E3DD2387CE4E004ED3E4 /* CAIPModel.m */; };
+		4B75E4502387D3A1004ED3E4 /* CAIPEvent.h in Sources */ = {isa = PBXBuildFile; fileRef = 4B75E3DE2387CE4E004ED3E4 /* CAIPEvent.h */; };
+		4B75E4512387D3A1004ED3E4 /* CAIPLog.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B75E3DF2387CE4E004ED3E4 /* CAIPLog.m */; };
+		4B75E4522387D3A1004ED3E4 /* CAIPKeyPath.h in Sources */ = {isa = PBXBuildFile; fileRef = 4B75E3E02387CE4E004ED3E4 /* CAIPKeyPath.h */; };
+		4B75E4532387D3A1004ED3E4 /* CAIPPlan.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B75E3E12387CE4E004ED3E4 /* CAIPPlan.m */; };
+		4B75E4542387D3A1004ED3E4 /* CAIPKeyPathParser.h in Sources */ = {isa = PBXBuildFile; fileRef = 4B75E3E22387CE4E004ED3E4 /* CAIPKeyPathParser.h */; };
+		4B75E4552387D3A1004ED3E4 /* CAIPEvent.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B75E3E32387CE4E004ED3E4 /* CAIPEvent.m */; };
+		4B75E4562387D3A1004ED3E4 /* CAIPModel.h in Sources */ = {isa = PBXBuildFile; fileRef = 4B75E3E42387CE4E004ED3E4 /* CAIPModel.h */; };
+		4B75E4572387D3A1004ED3E4 /* CAIPKeyPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B75E3E52387CE4E004ED3E4 /* CAIPKeyPath.m */; };
+		4B75E4582387D3A1004ED3E4 /* CAIPLog.h in Sources */ = {isa = PBXBuildFile; fileRef = 4B75E3E62387CE4E004ED3E4 /* CAIPLog.h */; };
+		4B75E4592387D3A1004ED3E4 /* CAIPPlan.h in Sources */ = {isa = PBXBuildFile; fileRef = 4B75E3E72387CE4E004ED3E4 /* CAIPPlan.h */; };
+		4B75E45A2387D3A1004ED3E4 /* CAIProbeUtils.h in Sources */ = {isa = PBXBuildFile; fileRef = 4B75E4052387CF96004ED3E4 /* CAIProbeUtils.h */; };
+		4B75E45B2387D3A1004ED3E4 /* CAIProbeUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B75E4042387CF96004ED3E4 /* CAIProbeUtils.m */; };
+		4B75E45C2387D3A1004ED3E4 /* CAIDecoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B75E3EA2387CE4E004ED3E4 /* CAIDecoder.m */; };
+		4B75E45D2387D3A1004ED3E4 /* CAIPAOPManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B75E3EB2387CE4E004ED3E4 /* CAIPAOPManager.m */; };
+		4B75E45E2387D3A1004ED3E4 /* CAIProbe.m in Sources */ = {isa = PBXBuildFile; fileRef = 4B75E3EC2387CE4E004ED3E4 /* CAIProbe.m */; };
+		4B75E45F2387D3A1004ED3E4 /* CAIDecoder.h in Sources */ = {isa = PBXBuildFile; fileRef = 4B75E3ED2387CE4E004ED3E4 /* CAIDecoder.h */; };
+		4B75E4602387D3A1004ED3E4 /* CAIPAOPManager.h in Sources */ = {isa = PBXBuildFile; fileRef = 4B75E3EE2387CE4E004ED3E4 /* CAIPAOPManager.h */; };
+		4B75E4612387D3A1004ED3E4 /* CAIProbeDelegate.h in Sources */ = {isa = PBXBuildFile; fileRef = 4B75E3DA2387CE4E004ED3E4 /* CAIProbeDelegate.h */; };
+		4B75E4622387D3D1004ED3E4 /* CAIProbe.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B75E3E92387CE4E004ED3E4 /* CAIProbe.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B75E4632387D3D1004ED3E4 /* CAIPEvent.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B75E3DE2387CE4E004ED3E4 /* CAIPEvent.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B75E4642387D3D1004ED3E4 /* CAIPKeyPath.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B75E3E02387CE4E004ED3E4 /* CAIPKeyPath.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B75E4652387D3D1004ED3E4 /* CAIPKeyPathParser.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B75E3E22387CE4E004ED3E4 /* CAIPKeyPathParser.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B75E4662387D3D1004ED3E4 /* CAIPModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B75E3E42387CE4E004ED3E4 /* CAIPModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B75E4672387D3D1004ED3E4 /* CAIPLog.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B75E3E62387CE4E004ED3E4 /* CAIPLog.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B75E4682387D3D1004ED3E4 /* CAIPPlan.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B75E3E72387CE4E004ED3E4 /* CAIPPlan.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B75E4692387D3D1004ED3E4 /* CAIProbeUtils.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B75E4052387CF96004ED3E4 /* CAIProbeUtils.h */; };
+		4B75E46A2387D3D1004ED3E4 /* CAIDecoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B75E3ED2387CE4E004ED3E4 /* CAIDecoder.h */; };
+		4B75E46B2387D3D1004ED3E4 /* CAIPAOPManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B75E3EE2387CE4E004ED3E4 /* CAIPAOPManager.h */; };
+		4B75E46C2387D3D2004ED3E4 /* CAIProbeDelegate.h in Headers */ = {isa = PBXBuildFile; fileRef = 4B75E3DA2387CE4E004ED3E4 /* CAIProbeDelegate.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B75E46E2387D423004ED3E4 /* Aspects.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4B75E3D72387CDCB004ED3E4 /* Aspects.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +79,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = 4B75E3BB2387CD93004ED3E4;
 			remoteInfo = CAIProbe;
+		};
+		4B75E4242387D2A1004ED3E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B75E3B32387CD93004ED3E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B75E4192387D2A1004ED3E4;
+			remoteInfo = CAIProbe_tvOS;
+		};
+		4B75E4402387D2BC004ED3E4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4B75E3B32387CD93004ED3E4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4B75E4352387D2BC004ED3E4;
+			remoteInfo = CAIProbe_macOS;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -71,6 +124,21 @@
 		4B75E3EE2387CE4E004ED3E4 /* CAIPAOPManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAIPAOPManager.h; sourceTree = "<group>"; };
 		4B75E4042387CF96004ED3E4 /* CAIProbeUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CAIProbeUtils.m; sourceTree = "<group>"; };
 		4B75E4052387CF96004ED3E4 /* CAIProbeUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CAIProbeUtils.h; sourceTree = "<group>"; };
+		4B75E40D2387D283004ED3E4 /* CAIProbe.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CAIProbe.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B75E40F2387D283004ED3E4 /* CAIProbe_WOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAIProbe_WOS.h; sourceTree = "<group>"; };
+		4B75E4102387D283004ED3E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B75E41A2387D2A1004ED3E4 /* CAIProbe_tvOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CAIProbe_tvOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B75E41C2387D2A1004ED3E4 /* CAIProbe_tvOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAIProbe_tvOS.h; sourceTree = "<group>"; };
+		4B75E41D2387D2A1004ED3E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B75E4222387D2A1004ED3E4 /* CAIProbe_tvOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CAIProbe_tvOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B75E4272387D2A1004ED3E4 /* CAIProbe_tvOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAIProbe_tvOSTests.m; sourceTree = "<group>"; };
+		4B75E4292387D2A1004ED3E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B75E4362387D2BC004ED3E4 /* CAIProbe_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CAIProbe_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B75E4382387D2BC004ED3E4 /* CAIProbe_macOS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CAIProbe_macOS.h; sourceTree = "<group>"; };
+		4B75E4392387D2BC004ED3E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4B75E43E2387D2BC004ED3E4 /* CAIProbe_macOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CAIProbe_macOSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		4B75E4432387D2BC004ED3E4 /* CAIProbe_macOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CAIProbe_macOSTests.m; sourceTree = "<group>"; };
+		4B75E4452387D2BC004ED3E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +158,44 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4B75E40A2387D283004ED3E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B75E46E2387D423004ED3E4 /* Aspects.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B75E4172387D2A1004ED3E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B75E41F2387D2A1004ED3E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B75E4232387D2A1004ED3E4 /* CAIProbe_tvOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B75E4332387D2BC004ED3E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B75E43B2387D2BC004ED3E4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B75E43F2387D2BC004ED3E4 /* CAIProbe_macOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -99,7 +205,13 @@
 				4B75E3D62387CDCB004ED3E4 /* framework */,
 				4B75E3BE2387CD93004ED3E4 /* CAIProbe */,
 				4B75E3C92387CD93004ED3E4 /* CAIProbeTests */,
+				4B75E40E2387D283004ED3E4 /* CAIProbe-WOS */,
+				4B75E41B2387D2A1004ED3E4 /* CAIProbe_tvOS */,
+				4B75E4262387D2A1004ED3E4 /* CAIProbe_tvOSTests */,
+				4B75E4372387D2BC004ED3E4 /* CAIProbe_macOS */,
+				4B75E4422387D2BC004ED3E4 /* CAIProbe_macOSTests */,
 				4B75E3BD2387CD93004ED3E4 /* Products */,
+				4B75E46D2387D423004ED3E4 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -108,6 +220,11 @@
 			children = (
 				4B75E3BC2387CD93004ED3E4 /* CAIProbe.framework */,
 				4B75E3C52387CD93004ED3E4 /* CAIProbeTests.xctest */,
+				4B75E40D2387D283004ED3E4 /* CAIProbe.framework */,
+				4B75E41A2387D2A1004ED3E4 /* CAIProbe_tvOS.framework */,
+				4B75E4222387D2A1004ED3E4 /* CAIProbe_tvOSTests.xctest */,
+				4B75E4362387D2BC004ED3E4 /* CAIProbe_macOS.framework */,
+				4B75E43E2387D2BC004ED3E4 /* CAIProbe_macOSTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -182,6 +299,58 @@
 			path = Probe;
 			sourceTree = "<group>";
 		};
+		4B75E40E2387D283004ED3E4 /* CAIProbe-WOS */ = {
+			isa = PBXGroup;
+			children = (
+				4B75E40F2387D283004ED3E4 /* CAIProbe_WOS.h */,
+				4B75E4102387D283004ED3E4 /* Info.plist */,
+			);
+			path = "CAIProbe-WOS";
+			sourceTree = "<group>";
+		};
+		4B75E41B2387D2A1004ED3E4 /* CAIProbe_tvOS */ = {
+			isa = PBXGroup;
+			children = (
+				4B75E41C2387D2A1004ED3E4 /* CAIProbe_tvOS.h */,
+				4B75E41D2387D2A1004ED3E4 /* Info.plist */,
+			);
+			path = CAIProbe_tvOS;
+			sourceTree = "<group>";
+		};
+		4B75E4262387D2A1004ED3E4 /* CAIProbe_tvOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				4B75E4272387D2A1004ED3E4 /* CAIProbe_tvOSTests.m */,
+				4B75E4292387D2A1004ED3E4 /* Info.plist */,
+			);
+			path = CAIProbe_tvOSTests;
+			sourceTree = "<group>";
+		};
+		4B75E4372387D2BC004ED3E4 /* CAIProbe_macOS */ = {
+			isa = PBXGroup;
+			children = (
+				4B75E4382387D2BC004ED3E4 /* CAIProbe_macOS.h */,
+				4B75E4392387D2BC004ED3E4 /* Info.plist */,
+			);
+			path = CAIProbe_macOS;
+			sourceTree = "<group>";
+		};
+		4B75E4422387D2BC004ED3E4 /* CAIProbe_macOSTests */ = {
+			isa = PBXGroup;
+			children = (
+				4B75E4432387D2BC004ED3E4 /* CAIProbe_macOSTests.m */,
+				4B75E4452387D2BC004ED3E4 /* Info.plist */,
+			);
+			path = CAIProbe_macOSTests;
+			sourceTree = "<group>";
+		};
+		4B75E46D2387D423004ED3E4 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -200,6 +369,40 @@
 				4B75E4072387CF96004ED3E4 /* CAIProbeUtils.h in Headers */,
 				4B75E4002387CE4E004ED3E4 /* CAIDecoder.h in Headers */,
 				4B75E4012387CE4E004ED3E4 /* CAIPAOPManager.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B75E4082387D283004ED3E4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B75E46C2387D3D2004ED3E4 /* CAIProbeDelegate.h in Headers */,
+				4B75E4622387D3D1004ED3E4 /* CAIProbe.h in Headers */,
+				4B75E4632387D3D1004ED3E4 /* CAIPEvent.h in Headers */,
+				4B75E4642387D3D1004ED3E4 /* CAIPKeyPath.h in Headers */,
+				4B75E4652387D3D1004ED3E4 /* CAIPKeyPathParser.h in Headers */,
+				4B75E4662387D3D1004ED3E4 /* CAIPModel.h in Headers */,
+				4B75E4672387D3D1004ED3E4 /* CAIPLog.h in Headers */,
+				4B75E4682387D3D1004ED3E4 /* CAIPPlan.h in Headers */,
+				4B75E4692387D3D1004ED3E4 /* CAIProbeUtils.h in Headers */,
+				4B75E46A2387D3D1004ED3E4 /* CAIDecoder.h in Headers */,
+				4B75E46B2387D3D1004ED3E4 /* CAIPAOPManager.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B75E4152387D2A1004ED3E4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B75E42A2387D2A1004ED3E4 /* CAIProbe_tvOS.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B75E4312387D2BC004ED3E4 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B75E4462387D2BC004ED3E4 /* CAIProbe_macOS.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,6 +445,96 @@
 			productReference = 4B75E3C52387CD93004ED3E4 /* CAIProbeTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		4B75E40C2387D283004ED3E4 /* CAIProbe-WOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B75E4142387D283004ED3E4 /* Build configuration list for PBXNativeTarget "CAIProbe-WOS" */;
+			buildPhases = (
+				4B75E4082387D283004ED3E4 /* Headers */,
+				4B75E4092387D283004ED3E4 /* Sources */,
+				4B75E40A2387D283004ED3E4 /* Frameworks */,
+				4B75E40B2387D283004ED3E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "CAIProbe-WOS";
+			productName = "CAIProbe-WOS";
+			productReference = 4B75E40D2387D283004ED3E4 /* CAIProbe.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4B75E4192387D2A1004ED3E4 /* CAIProbe_tvOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B75E42B2387D2A1004ED3E4 /* Build configuration list for PBXNativeTarget "CAIProbe_tvOS" */;
+			buildPhases = (
+				4B75E4152387D2A1004ED3E4 /* Headers */,
+				4B75E4162387D2A1004ED3E4 /* Sources */,
+				4B75E4172387D2A1004ED3E4 /* Frameworks */,
+				4B75E4182387D2A1004ED3E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CAIProbe_tvOS;
+			productName = CAIProbe_tvOS;
+			productReference = 4B75E41A2387D2A1004ED3E4 /* CAIProbe_tvOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4B75E4212387D2A1004ED3E4 /* CAIProbe_tvOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B75E42E2387D2A1004ED3E4 /* Build configuration list for PBXNativeTarget "CAIProbe_tvOSTests" */;
+			buildPhases = (
+				4B75E41E2387D2A1004ED3E4 /* Sources */,
+				4B75E41F2387D2A1004ED3E4 /* Frameworks */,
+				4B75E4202387D2A1004ED3E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4B75E4252387D2A1004ED3E4 /* PBXTargetDependency */,
+			);
+			name = CAIProbe_tvOSTests;
+			productName = CAIProbe_tvOSTests;
+			productReference = 4B75E4222387D2A1004ED3E4 /* CAIProbe_tvOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4B75E4352387D2BC004ED3E4 /* CAIProbe_macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B75E4472387D2BC004ED3E4 /* Build configuration list for PBXNativeTarget "CAIProbe_macOS" */;
+			buildPhases = (
+				4B75E4312387D2BC004ED3E4 /* Headers */,
+				4B75E4322387D2BC004ED3E4 /* Sources */,
+				4B75E4332387D2BC004ED3E4 /* Frameworks */,
+				4B75E4342387D2BC004ED3E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CAIProbe_macOS;
+			productName = CAIProbe_macOS;
+			productReference = 4B75E4362387D2BC004ED3E4 /* CAIProbe_macOS.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		4B75E43D2387D2BC004ED3E4 /* CAIProbe_macOSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B75E44A2387D2BC004ED3E4 /* Build configuration list for PBXNativeTarget "CAIProbe_macOSTests" */;
+			buildPhases = (
+				4B75E43A2387D2BC004ED3E4 /* Sources */,
+				4B75E43B2387D2BC004ED3E4 /* Frameworks */,
+				4B75E43C2387D2BC004ED3E4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4B75E4412387D2BC004ED3E4 /* PBXTargetDependency */,
+			);
+			name = CAIProbe_macOSTests;
+			productName = CAIProbe_macOSTests;
+			productReference = 4B75E43E2387D2BC004ED3E4 /* CAIProbe_macOSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -255,6 +548,21 @@
 						CreatedOnToolsVersion = 11.1;
 					};
 					4B75E3C42387CD93004ED3E4 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					4B75E40C2387D283004ED3E4 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					4B75E4192387D2A1004ED3E4 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					4B75E4212387D2A1004ED3E4 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					4B75E4352387D2BC004ED3E4 = {
+						CreatedOnToolsVersion = 11.1;
+					};
+					4B75E43D2387D2BC004ED3E4 = {
 						CreatedOnToolsVersion = 11.1;
 					};
 				};
@@ -274,6 +582,11 @@
 			targets = (
 				4B75E3BB2387CD93004ED3E4 /* CAIProbe */,
 				4B75E3C42387CD93004ED3E4 /* CAIProbeTests */,
+				4B75E40C2387D283004ED3E4 /* CAIProbe-WOS */,
+				4B75E4192387D2A1004ED3E4 /* CAIProbe_tvOS */,
+				4B75E4212387D2A1004ED3E4 /* CAIProbe_tvOSTests */,
+				4B75E4352387D2BC004ED3E4 /* CAIProbe_macOS */,
+				4B75E43D2387D2BC004ED3E4 /* CAIProbe_macOSTests */,
 			);
 		};
 /* End PBXProject section */
@@ -287,6 +600,41 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		4B75E3C32387CD93004ED3E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B75E40B2387D283004ED3E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B75E4182387D2A1004ED3E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B75E4202387D2A1004ED3E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B75E4342387D2BC004ED3E4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B75E43C2387D2BC004ED3E4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -321,6 +669,64 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		4B75E4092387D283004ED3E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B75E44D2387D3A1004ED3E4 /* CAIProbe.h in Sources */,
+				4B75E44E2387D3A1004ED3E4 /* CAIPKeyPathParser.m in Sources */,
+				4B75E44F2387D3A1004ED3E4 /* CAIPModel.m in Sources */,
+				4B75E4502387D3A1004ED3E4 /* CAIPEvent.h in Sources */,
+				4B75E4512387D3A1004ED3E4 /* CAIPLog.m in Sources */,
+				4B75E4522387D3A1004ED3E4 /* CAIPKeyPath.h in Sources */,
+				4B75E4532387D3A1004ED3E4 /* CAIPPlan.m in Sources */,
+				4B75E4542387D3A1004ED3E4 /* CAIPKeyPathParser.h in Sources */,
+				4B75E4552387D3A1004ED3E4 /* CAIPEvent.m in Sources */,
+				4B75E4562387D3A1004ED3E4 /* CAIPModel.h in Sources */,
+				4B75E4572387D3A1004ED3E4 /* CAIPKeyPath.m in Sources */,
+				4B75E4582387D3A1004ED3E4 /* CAIPLog.h in Sources */,
+				4B75E4592387D3A1004ED3E4 /* CAIPPlan.h in Sources */,
+				4B75E45A2387D3A1004ED3E4 /* CAIProbeUtils.h in Sources */,
+				4B75E45B2387D3A1004ED3E4 /* CAIProbeUtils.m in Sources */,
+				4B75E45C2387D3A1004ED3E4 /* CAIDecoder.m in Sources */,
+				4B75E45D2387D3A1004ED3E4 /* CAIPAOPManager.m in Sources */,
+				4B75E45E2387D3A1004ED3E4 /* CAIProbe.m in Sources */,
+				4B75E45F2387D3A1004ED3E4 /* CAIDecoder.h in Sources */,
+				4B75E4602387D3A1004ED3E4 /* CAIPAOPManager.h in Sources */,
+				4B75E4612387D3A1004ED3E4 /* CAIProbeDelegate.h in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B75E4162387D2A1004ED3E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B75E41E2387D2A1004ED3E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B75E4282387D2A1004ED3E4 /* CAIProbe_tvOSTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B75E4322387D2BC004ED3E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4B75E43A2387D2BC004ED3E4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4B75E4442387D2BC004ED3E4 /* CAIProbe_macOSTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -328,6 +734,16 @@
 			isa = PBXTargetDependency;
 			target = 4B75E3BB2387CD93004ED3E4 /* CAIProbe */;
 			targetProxy = 4B75E3C72387CD93004ED3E4 /* PBXContainerItemProxy */;
+		};
+		4B75E4252387D2A1004ED3E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4B75E4192387D2A1004ED3E4 /* CAIProbe_tvOS */;
+			targetProxy = 4B75E4242387D2A1004ED3E4 /* PBXContainerItemProxy */;
+		};
+		4B75E4412387D2BC004ED3E4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4B75E4352387D2BC004ED3E4 /* CAIProbe_macOS */;
+			targetProxy = 4B75E4402387D2BC004ED3E4 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -532,6 +948,232 @@
 			};
 			name = Release;
 		};
+		4B75E4122387D283004ED3E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/framework",
+				);
+				INFOPLIST_FILE = CAIProbe/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.caidev.CAIProbe;
+				PRODUCT_NAME = CAIProbe;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		4B75E4132387D283004ED3E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/framework",
+				);
+				INFOPLIST_FILE = CAIProbe/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.caidev.CAIProbe;
+				PRODUCT_NAME = CAIProbe;
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+		4B75E42C2387D2A1004ED3E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = CAIProbe_tvOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.caidev.CAIProbe-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 13.0;
+			};
+			name = Debug;
+		};
+		4B75E42D2387D2A1004ED3E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = CAIProbe_tvOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.caidev.CAIProbe-tvOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = appletvos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 13.0;
+			};
+			name = Release;
+		};
+		4B75E42F2387D2A1004ED3E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CAIProbe_tvOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.caidev.CAIProbe-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 13.0;
+			};
+			name = Debug;
+		};
+		4B75E4302387D2A1004ED3E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CAIProbe_tvOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.caidev.CAIProbe-tvOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = appletvos;
+				TARGETED_DEVICE_FAMILY = 3;
+				TVOS_DEPLOYMENT_TARGET = 13.0;
+			};
+			name = Release;
+		};
+		4B75E4482387D2BC004ED3E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = CAIProbe_macOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.caidev.CAIProbe-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		4B75E4492387D2BC004ED3E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = CAIProbe_macOS/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.caidev.CAIProbe-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+		4B75E44B2387D2BC004ED3E4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = CAIProbe_macOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.caidev.CAIProbe-macOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		4B75E44C2387D2BC004ED3E4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = CAIProbe_macOSTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.caidev.CAIProbe-macOSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -558,6 +1200,51 @@
 			buildConfigurations = (
 				4B75E3D42387CD93004ED3E4 /* Debug */,
 				4B75E3D52387CD93004ED3E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B75E4142387D283004ED3E4 /* Build configuration list for PBXNativeTarget "CAIProbe-WOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B75E4122387D283004ED3E4 /* Debug */,
+				4B75E4132387D283004ED3E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B75E42B2387D2A1004ED3E4 /* Build configuration list for PBXNativeTarget "CAIProbe_tvOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B75E42C2387D2A1004ED3E4 /* Debug */,
+				4B75E42D2387D2A1004ED3E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B75E42E2387D2A1004ED3E4 /* Build configuration list for PBXNativeTarget "CAIProbe_tvOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B75E42F2387D2A1004ED3E4 /* Debug */,
+				4B75E4302387D2A1004ED3E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B75E4472387D2BC004ED3E4 /* Build configuration list for PBXNativeTarget "CAIProbe_macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B75E4482387D2BC004ED3E4 /* Debug */,
+				4B75E4492387D2BC004ED3E4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B75E44A2387D2BC004ED3E4 /* Build configuration list for PBXNativeTarget "CAIProbe_macOSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4B75E44B2387D2BC004ED3E4 /* Debug */,
+				4B75E44C2387D2BC004ED3E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
